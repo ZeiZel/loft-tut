@@ -9,7 +9,7 @@
 			rgba(45, 52, 60, 0.38) 51.04%,
 			#242b33 92.19%
 		),
-		url('../assets/img/header/bg.jpg');
+		url('../assets/img/header/bg.jpg') no-repeat center/cover;
 
 	padding: 30px 0 74px 0;
 
@@ -47,6 +47,6 @@
 	&__bottom {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+		gap: 30px;
 	}
 }

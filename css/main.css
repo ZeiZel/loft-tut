@@ -136,18 +136,33 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1140px;
+  max-width: 1140px;
+}
+.container--sm {
+  max-width: 1102px;
 }
 
 .text-right {
   text-align: right;
 }
 
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../assets/img/header/bg.jpg");
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../assets/img/header/bg.jpg") no-repeat center/cover;
   padding: 30px 0 74px 0;
   min-height: 840px;
 }
@@ -205,4 +220,29 @@ a:hover {
 }
 .info__tel::before {
   background: url("../assets/img/header/phone.svg") no-repeat center/cover;
+}
+
+.benefits {
+  padding: 120px 0;
+}
+.benefits__row {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+.benefits__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+.benefits__item-text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.35;
 }/*# sourceMappingURL=main.css.map */
