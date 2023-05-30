@@ -1,0 +1,49 @@
+// global
+
+* {
+	box-sizing: border-box;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--black);
+		border-radius: 3px;
+		transition: all 0.2s;
+
+		&:hover {
+			background-color: var(--gray);
+		}
+	}
+}
+
+body {
+	font-family: $font-main;
+	color: $white;
+	background: $dark;
+	font-size: 16px;
+}
+
+a {
+	color: $white;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		color: $accent;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px; // чтобы контент не прилипал к краям
+	width: 1140px; // = 1110px
+}
+
+.text-right {
+	text-align: right;
+}
