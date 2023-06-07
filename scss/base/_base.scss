@@ -12,12 +12,12 @@
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: var(--black);
+		background-color: $gray;
 		border-radius: 3px;
 		transition: all 0.2s;
 
 		&:hover {
-			background-color: var(--gray);
+			background-color: $accent;
 		}
 	}
 }
@@ -75,4 +75,9 @@ a {
 	font-family: $font-accent;
 	color: $accent;
 	font-weight: 700;
+}
+
+.link-bold {
+	color: $accent;
+	font-weight: bold;
 }
