@@ -14,8 +14,12 @@
 			top: 0;
 			left: 0;
 
+			transform: translate(0%, -10%);
+
 			width: 21px;
 			height: 21px;
+
+			background: center/cover no-repeat;
 		}
 	}
 
@@ -25,5 +29,9 @@
 
 	&__tel::before {
 		background: url('../assets/img/header/phone.svg') no-repeat center/cover;
+	}
+
+	@include mediaTablet {
+		font-size: 14px;
 	}
 }

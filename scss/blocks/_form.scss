@@ -26,6 +26,12 @@
 		text-align: center;
 
 		color: $muted;
+
+		&--bottom {
+			@include mediaTablet {
+				grid-row: 4 / 5;
+			}
+		}
 	}
 
 	&__button {

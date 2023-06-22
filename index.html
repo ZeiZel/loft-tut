@@ -7,6 +7,7 @@
 		<title>LoftHouse</title>
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="icon" href="./assets/img/logo.svg" type="image/x-icon" />
+		<script defer src="./js/script.js"></script>
 	</head>
 	<body>
 		<header class="header">
@@ -16,9 +17,10 @@
 						<a href="#">
 							<img src="./assets/img/logo.svg" alt="LoftHouse" />
 						</a>
+
 						<div class="header__nav">
 							<nav class="nav">
-								<ul>
+								<ul class="nav__list">
 									<li><a href="#">О Комплексе</a></li>
 									<li><a href="#">Район</a></li>
 									<li><a href="#">Каталог квартир</a></li>
@@ -26,6 +28,12 @@
 									<li><a href="#">Контакты</a></li>
 								</ul>
 							</nav>
+						</div>
+
+						<div class="header__nav-button">
+							<button class="nav-icon-btn">
+								<div class="nav-icon"></div>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -154,7 +162,7 @@
 						<form action="" class="cta__form form">
 							<input type="text" class="form__input" placeholder="Ваше имя" />
 							<input type="text" class="form__input" placeholder="Ваш телефон" />
-							<p class="form__privacy">
+							<p class="form__privacy form__privacy--bottom">
 								*Мы никому не передаем ваши данные. <br />
 								И не сохраняем ваш номер в базу.
 							</p>
@@ -196,7 +204,7 @@
 						<h2 class="title">Есть вопросы?</h2>
 					</div>
 					<form action="" class="feedback__form form">
-						<p class="form__privacy">
+						<p class="form__privacy form__privacy--bottom">
 							*Мы никому не передаем ваши данные. <br />
 							И не сохраняем ваш номер в базу.
 						</p>
@@ -245,7 +253,12 @@
 							<li>Адрес: Наб. реки Фонтанки 10-15</li>
 							<li>Телефон: <a href="tel:+78121234567">8 (812) 123-45-67</a></li>
 							<li>Отдел продаж: 10:00 - 20:00</li>
-							<li>E-mail: <a class="link-bold" href="mailto:vip@lofthouse.ru">vip@lofthouse.ru</a></li>
+							<li>
+								E-mail:
+								<a class="link-bold" href="mailto:vip@lofthouse.ru"
+									>vip@lofthouse.ru</a
+								>
+							</li>
 						</ul>
 						<ul class="footer__socials">
 							<li>
