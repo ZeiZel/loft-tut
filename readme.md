@@ -1,6 +1,6 @@
 # Сайт LoftHouse
 
-(главная страница)['./main_page.png']
+![main_page.png](main_page.png)
 
 Используемые технологии:
 
